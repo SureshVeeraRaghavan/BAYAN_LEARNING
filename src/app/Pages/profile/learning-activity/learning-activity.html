@@ -1,0 +1,32 @@
+<h2 class="section-title">
+  {{ labels[selectedLang].title }}
+</h2>
+
+<div class="activity-container">
+    
+    <h3 class="sub-title">
+      {{ labels[selectedLang].recent }}
+    </h3>
+
+    <p class="sub-desc">
+      {{ labels[selectedLang].desc }}
+    </p>
+
+    <div class="activity-list">
+        
+        <div class="activity-card" *ngFor="let a of activityData[selectedLang]">
+            
+            <div class="icon-circle" [style.background]="a.bg">
+                {{ a.icon }}
+            </div>
+
+            <div class="activity-info">
+                <p class="activity-title">{{ a.title }}</p>
+                <p class="activity-date">{{ a.date }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

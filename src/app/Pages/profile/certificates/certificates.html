@@ -1,0 +1,40 @@
+<div class="certificates-header">
+  <h2>{{ certificateLabels[selectedLang].title }}</h2>
+
+  <button class="download-all">
+    ⬇️ {{ certificateLabels[selectedLang].downloadAll }}
+  </button>
+</div>
+
+<div class="certificates-grid">
+
+  <div class="certificate-card" *ngFor="let cert of certificateData[selectedLang]">
+    <div class="corner-tag"></div>
+
+    <h3>{{ cert.title }} 🏅</h3>
+
+    <p class="instructor">
+      {{ certificateLabels[selectedLang].by }} {{ cert.instructor }}
+    </p>
+
+    <p class="issued">
+      {{ certificateLabels[selectedLang].issued }}: {{ cert.issued }}
+    </p>
+
+    <p class="id">
+      {{ certificateLabels[selectedLang].credential }}: {{ cert.id }}
+    </p>
+
+    <div class="actions">
+      <button class="download-btn">
+        ⬇️ {{ certificateLabels[selectedLang].download }}
+      </button>
+
+      <button class="share-btn">
+        🔗 {{ certificateLabels[selectedLang].share }}
+      </button>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+<div class="profile-card">
+
+  <div class="profile-top">
+
+    <div class="profile-left">
+
+      <div class="avatar-wrapper">
+        <img [src]="user.avatar" class="avatar" />
+      </div>
+
+      <div class="user-info">
+
+        <h2>{{ user.name }}</h2>
+        <p class="user-role">{{ user.role }}</p>
+
+        <div class="meta">
+          <span>📧 {{ user.email }}</span>
+          <span>📍 {{ user.location }}</span>
+          <span>📅 {{ labels[selectedLang].joined }} {{ user.joined }}</span>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <h3>{{ user.stats.courses }}</h3>
+            <p>{{ labels[selectedLang].courses }}</p>
+          </div>
+
+          <div class="stat">
+            <h3>{{ user.stats.certificates }}</h3>
+            <p>{{ labels[selectedLang].certificates }}</p>
+          </div>
+
+          <div class="stat">
+            <h3>{{ user.stats.learningTime }}</h3>
+            <p>{{ labels[selectedLang].learningTime }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="edit-btn">
+      ⚙️ {{ labels[selectedLang].edit }}
+    </button>
+
+  </div>
+</div>

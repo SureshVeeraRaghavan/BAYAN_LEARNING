@@ -1,0 +1,28 @@
+<div class="weekly-goal-card">
+
+  <!-- Header -->
+  <div class="goal-header">
+    <div class="goal-title">
+      <span class="goal-icon">🎯</span>
+      <h2>Weekly Learning Goal</h2>
+    </div>
+    <p class="goal-subtitle">Stay consistent with your learning</p>
+  </div>
+
+  <!-- Hours row -->
+  <div class="goal-hours-row">
+    <span class="left-hours">{{ weeklyGoal }} hours / week</span>
+    <span class="right-hours">{{ completedHours }} hours completed</span>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="goal-progress-wrapper">
+    <div class="goal-progress-fill" [style.width.%]="progressPercent"></div>
+  </div>
+
+  <!-- Bottom text -->
+  <p class="goal-status">
+    You're {{ progressPercent }}% towards your weekly goal. Keep it up!
+  </p>
+
+</div>

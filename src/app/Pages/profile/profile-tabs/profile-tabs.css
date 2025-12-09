@@ -1,0 +1,35 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background: #e5e4e4;
+  padding: 4px;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 18px auto 0 auto; 
+  margin-top: 3%;
+}
+
+.tabs button {
+  border: none;
+  background: transparent;
+  padding: 3px 11px;     
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;       
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  color: #333;
+}
+
+.tabs button.active {
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  font-weight: 600;
+}
+
+.tabs button:hover {
+  background: #f1f1f1;
+}

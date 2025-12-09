@@ -1,0 +1,98 @@
+<div class="auth">
+  <div class="auth-container">
+    <h1>Create Account</h1>
+    <p class="subtitle">Join us to start your learning journey</p>
+
+    <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+      <p
+        *ngIf="message"
+        [ngClass]="{
+          'error-message':
+            message.includes('failed') ||
+            message.includes('not match') ||
+            message.includes('fill') ||
+            message.includes('must be'),
+          'success-message': message.includes('Successful')
+        }"
+        class="message"
+      >
+        {{ message }}
+      </p>
+
+      <div class="form-group">
+        <label for="username">Full Name  <span class="validate">*</span></label>
+        <input
+          id="username"
+          type="text"
+          [(ngModel)]="username"
+          name="username"
+          required
+          placeholder="Enter your full name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address <span class="validate">*</span></label>
+        <input
+          id="email"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password <span class="validate">*</span></label>
+        <input
+          id="password"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          required
+          placeholder="Create a password"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password <span class="validate">*</span></label>
+        <input
+          id="confirmPassword"
+          type="password"
+          [(ngModel)]="confirmPassword"
+          name="confirmPassword"
+          required
+          placeholder="Confirm your password"
+        />
+      </div>
+      <div class="form-group">
+         <label for="selectrole">Select role <span class="validate">*</span></label>
+          <select class="rolecontainer"  id="type" name="type"  [(ngModel)]="selectedRole">
+          <option class="defaultcolor" value="">select</option>
+        <option value="TEACHER">Trainer</option>
+        <option value="STUDENT">Trainee</option>
+      
+      </select>
+      </div>
+     
+
+      <button type="submit" [disabled]="!registerForm.form.valid || loading" class="btn-submit">
+        <span *ngIf="!loading">Create Account</span>
+        <span *ngIf="loading" class="loader-wrapper">
+          <span class="loader"></span>
+          Creating Account...
+        </span>
+      </button>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <p class="register-link">
+        Already have an account?
+        <a routerLink="/">Sign In</a>
+      </p>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,108 @@
+.bordersha{
+      border: 0.5px solid #ddd;
+      
+      
+      input{
+         font-size: 13px !important;
+          padding: 10px 12px !important;
+          border: 1px solid #d4d4d4;
+          border-radius: 6px;
+          font-size: 13px;
+          transition: all 0.2s ease;
+           &:focus {
+            outline: none;
+            border-color: blue;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+          }
+        
+      }
+      &::placeholder{
+         color: #a3a3a3;
+       
+           
+      }
+      select{
+         font-size: 13px;
+          padding: 10px 12px;
+          border: 1px solid #d4d4d4;
+          border-radius: 6px;
+          font-size: 13px;
+          transition: all 0.2s ease;
+           &:focus {
+            outline: none;
+            border-color: blue;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+          }
+      }
+     }
+
+.videocontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.videp {
+  display: flex;
+ 
+  width: 300px;
+  height: auto;
+}
+
+.tittle {
+  display: flex;
+}
+
+.search-color{
+  border: 0.5px solid #eee;
+}
+.category{
+            height: 28px;
+           width: 100px;
+           border-radius: 10px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+}
+
+
+
+  .bordersha{
+      border: 0.5px solid #ddd;
+      
+      
+      input{
+         font-size: 13px !important;
+          padding: 10px 12px !important;
+          border: 1px solid #d4d4d4;
+          border-radius: 6px;
+          font-size: 13px;
+          transition: all 0.2s ease;
+           &:focus {
+            outline: none;
+            border-color: blue;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+          }
+        
+      }
+      &::placeholder{
+         color: #a3a3a3;
+       
+           
+      }
+      select{
+         font-size: 13px;
+          padding: 10px 12px;
+          border: 1px solid #d4d4d4;
+          border-radius: 6px;
+          font-size: 13px;
+          transition: all 0.2s ease;
+           &:focus {
+            outline: none;
+            border-color: blue;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+          }
+      }
+     }

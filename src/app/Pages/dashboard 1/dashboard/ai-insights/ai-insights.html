@@ -1,0 +1,37 @@
+<div class="ai-card">
+
+  <div class="ai-header">
+    <span class="ai-icon">📊</span>
+    <h2>{{ heading }}</h2>
+  </div>
+
+  <div class="ai-content">
+
+    <div class="left-block">
+      <h3 class="sub-title">Personalized Recommendations</h3>
+
+      <ul class="list">
+        <li *ngFor="let item of recommendations">
+          <span class="emoji">{{ item.icon }}</span>
+          {{ item.text }}
+        </li>
+      </ul>
+
+      <div class="ai-button-wrapper">
+      <button class="analytics-btn">View Detailed Analytics</button>
+    </div>
+    </div>
+
+    <div class="right-block">
+      <h3 class="sub-title">Learning Patterns</h3>
+
+      <ul class="list">
+        <li *ngFor="let p of patterns">
+          • {{ p }}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>

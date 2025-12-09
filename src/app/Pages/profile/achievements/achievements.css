@@ -1,0 +1,66 @@
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 5px 0 30px;
+  margin-bottom: 1%;
+  margin-top: 0%;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  column-gap: 20px;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.achievement-card {
+  background: white;
+  width: 250px;
+  height: 200px;
+  border-radius: 20px ;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.badge-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #f8b321, #ff6b00);
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  position: relative;
+}
+
+.badge-icon::before {
+  content: "🏅";
+  position: absolute;
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.achievement-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.desc {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.earned {
+  color: #777;
+  font-size: 14px;
+}

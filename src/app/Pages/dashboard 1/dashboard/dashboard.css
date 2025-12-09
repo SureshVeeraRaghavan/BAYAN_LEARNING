@@ -1,0 +1,36 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;        
+  padding: 20px 30px;    
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 25px;
+}
+.dashboard-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dashboard-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+@media(max-width: 900px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}

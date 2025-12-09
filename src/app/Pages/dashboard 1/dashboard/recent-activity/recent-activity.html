@@ -1,0 +1,29 @@
+<div class="activity-card">
+
+  <h2 class="section-title">Recent Activity</h2>
+  <p class="section-subtitle">Your latest learning milestones</p>
+
+  <div class="activity-list">
+
+    <div *ngFor="let a of activities" class="activity-item">
+
+      <!-- Left Icon -->
+      <div class="activity-icon" [style.background]="a.color">
+        <span class="icon" [style.color]="a.iconColor">{{ a.icon }}</span>
+      </div>
+
+      <!-- Middle Content -->
+      <div class="activity-content">
+        <h4>{{ a.title }}</h4>
+        <p>{{ a.time }}</p>
+      </div>
+
+      <div class="points">
+        {{ a.points }}
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

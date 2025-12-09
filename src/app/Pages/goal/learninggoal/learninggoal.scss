@@ -1,0 +1,200 @@
+.heading {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  height: 110vh;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+
+      gap: 20px;
+      span {
+        // border: 1px solid black;
+        font-size: 14px;
+        padding: 0px 10px;
+        border-radius: 5px;
+      }
+      .high {
+        background-color: pink;
+      }
+      .career {
+        background-color: black;
+        color: white;
+      }
+    }
+    .icon {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  .desc {
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+  .progress-container {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 6px;
+    .subheading {
+      font-weight: 600;
+    }
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #d7d7d7;
+    border-radius: 8px;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: #000;
+    border-radius: 8px;
+    transition: width 0.4s ease;
+  }
+  .details {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    display: flex;
+    font-size: 14px;
+    justify-content: space-evenly;
+    gap: 20px;
+    @media only screen and (max-width: 480px) {
+    }
+  }
+  .heade {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media only screen and (max-width: 480px) {
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    }
+    .cards {
+      border: 1px solid #d4d4d4 !important;
+      border: none;
+      border-radius: 10px;
+      width: 23%;
+      height: 80px;
+      margin-top: 30px;
+      padding: 20px 20px;
+      background-color: #f9fafb;
+      opacity: 1;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 15px;    
+        font-weight: 500;
+      }
+    }
+  }
+  .aimodule {
+    height: 38%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #eff6ff;
+    .aiheading {
+      display: flex;
+
+      h1 {
+        margin-left: 300px;
+        font-size: 16px;
+        font-weight: 800;
+      }
+    
+    }
+      .content{
+        display: flex;
+        font-size: 15px;
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+      }
+     
+      
+      button{
+
+        border: 1px solid #eee;
+        font-size: 13px;
+        border-radius: 5px;
+        font-weight: 600;
+        padding: 0 10px;
+
+      }
+      .description{
+        margin-top: 12px;
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+
+      }
+      .dettailsbutton{
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+        .detabu
+        {
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+        }
+
+      }
+      
+  }
+  .learningbutton{
+    display: flex;
+    gap: 15px;
+    
+    margin-top: 20px;
+    .buttonstyle{
+        display: flex;
+        gap: 12px;
+        border: 1px solid #eee;
+           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 6px 15px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+  }
+}

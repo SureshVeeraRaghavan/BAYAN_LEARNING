@@ -1,0 +1,17 @@
+<div class="achievements-card">
+
+  <h2 class="section-title">Recent Achievements</h2>
+  <p class="section-subtitle">Your learning milestones and certificates</p>
+
+  <div class="achievements-grid">
+    <div *ngFor="let item of achievements" class="achievement-box">
+      <div class="icon-circle">
+        🏅
+      </div>
+
+      <h3 class="achievement-title">{{ item.title }}</h3>
+      <p class="achievement-date">{{ item.date }}</p>
+    </div>
+  </div>
+
+</div>

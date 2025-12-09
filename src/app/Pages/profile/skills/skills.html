@@ -1,0 +1,17 @@
+<h2 class="title">{{ labels[selectedLang].title }}</h2>
+
+<div class="skills-wrapper">
+
+  <div class="skill-group" *ngFor="let group of skillGroups[selectedLang]">
+
+    <h3 class="group-title">{{ group.title }}</h3>
+
+    <div class="skill-tags">
+      <span class="tag" *ngFor="let skill of group.skills">
+        {{ skill }}
+      </span>
+    </div>
+
+  </div>
+
+</div>

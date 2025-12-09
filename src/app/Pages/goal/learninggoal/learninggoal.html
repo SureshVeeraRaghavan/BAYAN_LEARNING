@@ -1,0 +1,97 @@
+<div class="heading">
+  <h1>Your Learning Goals</h1>
+</div>
+<div class="container">
+  <div class="header">
+    <div class="title">
+      <h1>Become a Data Scientist</h1>
+      <span class="high">high</span>
+      <span class="career"> career</span>
+    </div>
+    <div class="icon">
+      <span><img src="assets/pause-button.png" class="w-5 h-5   object-cover" />  </span>
+      <span class="write"><img src="assets/edit.png" class="w-5 h-5  object-cover" /></span>
+      <span class="">  <img src="assets/delete1.png" class="w-5 h-5  object-cover" /></span>
+    </div>
+  </div>
+  <p class="desc">Transition from software development to data science role</p>
+
+  <div class="progress-container">
+    <div class="progress-header">
+      <span class="subheading">Overall Progress</span>
+      <span>{{ progress }}%</span>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill" [style.width.%]="progress"></div>
+    </div>
+  </div>
+  <div class="details">
+    <div class="flex">
+      <span> <img class="" src="assets/clock.png" /></span>
+      <span>120 hours</span>
+    </div>
+    <div class="flex">
+      <span>icon</span>
+      <span>1/11/2026</span>
+    </div>
+    <div class="flex">
+      <span>icon</span>
+      <span>hands-on</span>
+    </div>
+    <div class="flex">
+      <span>icon</span>
+      <span>1/4 skills</span>
+    </div>
+  </div>
+  <div class="heade">
+    <div>
+      <h1>Required Skills</h1>
+    </div>
+  </div>
+  <div class="card">
+    <div *ngFor="let da of learing" class="cards">
+      <div class="title">
+        <span><img class="h-5 w-5" src={{da.icon}}></span>
+        <span>{{ da.title }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="aimodule">
+    <div class="aiheading">
+      <span>icon</span>
+      <h1>AI Recommendations</h1>
+    </div>
+    <div class="content">
+      <p><b>Next Steps:</b> Focus on Statistics fundamentals before diving into Machine Learning</p>
+      <b class="mr-24"> Recommended Paths:</b>
+    </div>
+    <div class="butto">
+      <button>Cloud Computing Basics</button>
+      <button>AWS Certification Path</button>
+    </div>
+    <p class="description">
+      <b>Time Optimization:</b> Based on your hands-on learning style, consider project-based
+      courses
+    </p>
+    <div class="dettailsbutton">
+      <button class="detabu">View Details -></button>
+    </div>
+  </div>
+  <div class="learningbutton">
+    <div class="buttonstyle">
+        <img class="h-5 w-5" src="assets/play-button.png" >
+      <button>Continue learning</button>
+    </div>
+    <div class="buttonstyle">
+         <img class="h-5 w-5" src="assets/progress.png" >
+      <button>View Progress</button>
+    </div>
+    <div class="buttonstyle">
+      <img class="h-5 w-5" src="assets/solutions.png" >
+      <button>Get Ai Advice</button>
+    </div>
+  </div>
+</div>
+
+

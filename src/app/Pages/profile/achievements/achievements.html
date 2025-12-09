@@ -1,0 +1,22 @@
+<h2 class="section-title">
+  {{ selectedLang === 'ar' ? 'الإنجازات' : 
+     selectedLang === 'hi' ? 'उपलब्धियाँ' :
+     selectedLang === 'ta' ? 'சாதனைகள்' :
+     'Achievements' }}
+</h2>
+
+<div class="achievements-grid">
+  <div class="achievement-card" *ngFor="let a of achievementLabels[selectedLang]">
+
+    <div class="badge-icon"></div>
+
+    <h3>{{ a.title }}</h3>
+
+    <p class="desc">{{ a.description }}</p>
+
+    <p class="earned">
+      {{ selectedLang === 'ar' ? 'تم الحصول عليه' : 'Earned' }} {{ a.earned }}
+    </p>
+
+  </div>
+</div>

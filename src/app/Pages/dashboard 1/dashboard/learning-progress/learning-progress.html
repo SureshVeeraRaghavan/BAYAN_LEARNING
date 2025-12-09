@@ -1,0 +1,26 @@
+<div class="progress-card">
+
+  <h2 class="section-title">Learning Progress</h2>
+  <p class="section-subtitle">Your skill development over time</p>
+
+  <div class="progress-list">
+    <div *ngFor="let item of progress" class="progress-row">
+
+      <!-- HEADER + PERCENTAGE IN SAME ROW -->
+      <div class="skill-header">
+        <div class="left">
+          <span class="skill-name">{{ item.skill }}</span>
+          <span class="tag">{{ item.category }}</span>
+        </div>
+
+        <div class="progress-value">{{ item.value }}%</div>
+      </div>
+
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar-fill" [style.width.%]="item.value"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

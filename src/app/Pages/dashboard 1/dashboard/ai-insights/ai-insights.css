@@ -1,0 +1,90 @@
+.ai-card {
+  background: #f4f7ff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 2%;
+  height: auto;
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ai-icon {
+  font-size: 22px;
+}
+
+.ai-header h2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ai-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-block, .right-block {
+  width: 90%;
+  white-space: nowrap;
+}
+
+.sub-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  margin-left: 30%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.list li {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emoji {
+  font-size: 16px;
+}
+
+.analytics-btn {
+  padding: 7px 20px;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+}
+
+
+.ai-button-wrapper {
+  grid-column: 1 / -1;          
+  display: flex;
+  justify-content: center;      
+  margin-bottom: 10px;
+  margin-left: 100%;
+}
+
+.analytics-btn:hover {
+  opacity: 0.9;
+}
