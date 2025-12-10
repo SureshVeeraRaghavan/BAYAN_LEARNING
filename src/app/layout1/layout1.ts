@@ -97,6 +97,8 @@ export class Layout1 implements OnInit {
     },
   };
 
+
+  
   navigation: { key: NavKey; href: string; icon: string }[] = [
     { key: 'home', href: '/app/home', icon: 'fa fa-home' },
     { key: 'library', href: '/app/library', icon: 'fa fa-book' },
